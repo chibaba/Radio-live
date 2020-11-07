@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#fd0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="4dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/exo_prew"
+            android:tint="#FF00"
+            style="@style/ExoMediaButton.Previous" />
+        <ImageButton
+            android:id="@+id/exo_rew"
+            android:tint="#FF00"
+            style="@style/ExoMediaButton.Rewind" />
+        <ImageButton
+            android:id="@+id/exo_play"
+            android:tint="#FF00"
+            style="@style/ExoMediaButton.Play" />
+        <ImageButton
+        android:id="@+id/exo_pause"
+        android:tint="#FF00"
+        style="@style/ExoMediaButton.Pause" />
+
+        <ImageButton
+            android:id="@+id/exo_ffwd"
+            android:tint="#FF00"
+            style="@style/ExoMediaButton.FastForward" />
+        <ImageButton
+            android:id="@+id/exo_next"
+            android:tint="#FF00"
+            style="@style/ExoMediaButton.Next" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation
 
 </LinearLayout>
