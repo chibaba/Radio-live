@@ -62,5 +62,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        if(myExoPlayer != null) {
+            myExoPlayer.removeListener(listener);
+            myExoPlayer.release();
+            myExoPlayer = null;
+        }
     }
 }
