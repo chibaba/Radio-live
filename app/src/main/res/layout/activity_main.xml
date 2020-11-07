@@ -12,7 +12,14 @@
         android:layout_height="match_parent"
         app:show_timeout="100000"
         app:show_buffering="when_playing"
+
         />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_canterInParent="true"
+        android:visibility="gone" />
 
 
 </RelativeLayout>
