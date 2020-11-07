@@ -2,8 +2,10 @@ package com.example.radiolive;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.net.Uri;
 import android.os.Bundle;
 
+import com.google.android.exoplayer2.MediaItem;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.ui.PlayerView;
 
@@ -25,6 +27,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initializePlayer() {
+         myExoPlayer = new  SimpleExoPlayer.Builder( this)
+                 .build();
+         playerView.setPlayer(myExoPlayer);
 
-    }
+        MediaItem  mediaItem = MediaItem.fromUri(Uri.parse(radio_url));
+        myExoPlayer.addMediaItem(mediaItem);
+
+        myExoPlayer.prepare();
+        myExoPlayer.play();
+        }
 }
