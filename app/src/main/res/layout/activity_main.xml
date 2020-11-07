@@ -13,15 +13,17 @@
         android:layout_height="match_parent"
         app:show_timeout="100000"
         app:show_buffering="when_playing"
+        app:rewind_increment="10000"
+        app:fastforward_increment="10000"
         app:use_controller="true"
-        app:controller_layout_id="@layout/custom_playback_control"
+        app:controller_layout_id="@layout/custom_playback_control"/>
 
         />
     <ProgressBar
         android:id="@+id/progress_bar"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_canterInParent="true"
+        android:layout_centerInParent="true"
         android:visibility="gone" />
 
 
