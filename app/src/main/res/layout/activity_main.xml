@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,14 +9,17 @@
 
     <com.google.android.exoplayer2.ui.PlayerView
         android:id="@+id/player_view"
-        android:background="@drawable/xoxo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:show_timeout="100000"
+        app:show_timeout="1000000"
         app:show_buffering="when_playing"
         app:rewind_increment="10000"
         app:fastforward_increment="10000"
         app:use_controller="true"
+        custom:avDensity="0.8"
+        custom:avType="fill"
+        custom:avColor="@color/av_dark_blue"
+        custom:avSpeed="normal"
         app:controller_layout_id="@layout/custom_playback_control"/>
 
         />
