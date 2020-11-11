@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.google.android.exoplayer2.MediaItem;
 import com.google.android.exoplayer2.Player;
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         myExoPlayer.prepare();
         myExoPlayer.play();
+        Toast.makeText(this, "Radio Streaming live",Toast.LENGTH_SHORT).show();
 
         listener = new Player.EventListener() {
             @Override
